@@ -10,7 +10,8 @@ st.set_page_config(layout='wide')
 a, b = st.columns(2)
 b.title('Investment Insights')
 a.image(photo, width=600)
-st.line()
+line = "_"*50
+st.write(line)
 st.header("1. My portfolio in yearly metrics")
 
 df = tf.get_stock_data()
