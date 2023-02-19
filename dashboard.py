@@ -44,7 +44,7 @@ bar_fig6 = tf.make_bar_chart2(df_yearly=df_yearly, width=600, height=400,
 #               marker_color='rgb(128,0,0)')
         
         
-        
+st.header("2. daily data $TSLA | portfolio | open/close actions")        
 
 fig_tot = tf.make_total_plot(df_tot=df_tot, width=600, height=600)
 fig_2 = tf.make_portfolio_plot(df_tot=df_tot, width=600, height=600)
