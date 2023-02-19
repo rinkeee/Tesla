@@ -312,12 +312,10 @@ def make_total_plot(df_tot, width, height):
                       color="rgb(255,0,255)",
                       gradient=dict(
                           color="rgba(255,0,255,0.2)",
-                          type="radial",),         
+                          type="radial",))        
         secondary_y=False
     )
-
-   
-
+                   
     fig.add_trace(
         go.Scatter(x=df_tot.index, y=df_tot['Open'], name="Open positions", mode='markers', 
                    marker_color='green'),
