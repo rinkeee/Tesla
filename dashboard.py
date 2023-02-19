@@ -9,7 +9,7 @@ st.set_page_config(layout='wide')
 
 a, b = st.columns(2)
 b.title('Investment Insights')
-a.image(photo, width=500)
+a.image(photo, width=600)
 df = tf.get_stock_data()
 df_e, df_deposit = tf.get_etoro_data(df=df)
 df_tot = tf.combine_etoro_stock_data(df_e=df_e, df=df)
