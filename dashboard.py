@@ -3,13 +3,13 @@ import tesla_functions as tf
 import plotly.graph_objects as go
 from PIL import Image
 
-photo = Image.open('roadster.png')
+photo = Image.open('tesla.png')
 
 st.set_page_config(layout='wide')
 
 a, b = st.columns(2)
-a.title('Tesla Investment Insights')
-b.image(photo, width=300)
+b.title('Investment Insights')
+a.image(photo, width=300)
 df = tf.get_stock_data()
 df_e, df_deposit = tf.get_etoro_data(df=df)
 df_tot = tf.combine_etoro_stock_data(df_e=df_e, df=df)
