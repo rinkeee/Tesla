@@ -300,17 +300,18 @@ def make_total_plot(df_tot, width, height):
     fig = make_subplots(specs=[[{"secondary_y": True}]])
 
     # Add traces
+     fig.add_trace(
+        go.Scatter(x=df_tot.index, y=df_tot['Portfolio'], name="Portfolio", marker_color="rgb(255,213,0)",
+                  fill='tozeroy', fillcolor='rgba(255,213,0,0.2)'),
+        secondary_y=True,
+    )
     fig.add_trace(
         go.Scatter(x=df_tot.index, y=df_tot['TSLA'], name="Tesla stock price", marker_color="rgb(255,0,255)",
                   fill='tonexty', fillcolor='rgba(255,0,255,0.2)'),
         secondary_y=False
     )
 
-    fig.add_trace(
-        go.Scatter(x=df_tot.index, y=df_tot['Portfolio'], name="Portfolio", marker_color="rgb(255,213,0)",
-                  fill='tozeroy', fillcolor='rgba(255,213,0,0.2)'),
-        secondary_y=True,
-    )
+   
 
     fig.add_trace(
         go.Scatter(x=df_tot.index, y=df_tot['Open'], name="Open positions", mode='markers', 
