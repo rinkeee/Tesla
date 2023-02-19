@@ -312,7 +312,7 @@ def make_total_plot(df_tot, width, height):
                       color="rgb(255,0,255)",
                       gradient=dict(
                           color="rgba(255,0,255,0.2)",
-                          type="radial",))        
+                          type="radial")),        
         secondary_y=False
     )
                    
