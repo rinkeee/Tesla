@@ -20,6 +20,10 @@ df_tot = tf.combine_etoro_stock_data(df_e=df_e, df=df)
 df_yearly = tf.get_yearly_values(df_tot=df_tot, df_e=df_e, df_deposit=df_deposit)
 a, b = st.columns(2)
 
+df_check = st.checkbox(label="Show values in dataframe")
+if df_check:
+  st.write(df_yearly)
+               
 bar_fig1 = tf.make_bar_chart2(df_yearly=df_yearly, width=600, height=400, 
                              name='Stock purchased [$]', column='Stock purchased',red_green=False)
 bar_fig2 = tf.make_bar_chart2(df_yearly=df_yearly, width=600, height=400, 
