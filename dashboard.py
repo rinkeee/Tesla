@@ -10,7 +10,7 @@ st.set_page_config(layout='wide')
 a, b = st.columns(2)
 b.title('Investment Insights')
 a.image(photo, width=600)
-line = "_"*50
+line = "*"*50
 st.write(line)
 st.header("1. My portfolio in yearly metrics")
 
