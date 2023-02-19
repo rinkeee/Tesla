@@ -41,5 +41,5 @@ b.plotly_chart(bar_fig4, use_container_width=True)
 b.plotly_chart(bar_fig5, use_container_width=True)
 a.plotly_chart(bar_fig6, use_container_width=True)
 
-st.plotly_chart(fig_tot, use_container_width=True, theme='Streamlit')
-st.plotly_chart(fig_2, use_container_width=True, theme='Streamlit')
+st.plotly_chart(fig_tot, use_container_width=True)
+st.plotly_chart(fig_2, use_container_width=True)
