@@ -305,19 +305,7 @@ def make_total_plot(df_tot, width, height):
                   fill='tozeroy', fillcolor='rgba(255,213,0,0.2)'),
         secondary_y=True,
     )
- 
-    fig.add_trace(
-        go.Scatter(x=df_tot.index, y=df_tot['TSLA'], name="Tesla stock price",
-                  marker=dict(
-                      color="rgb(255,0,255)",
-                      size=400,
-                      gradient=dict(
-                          color="rgba(255,0,255,0.2)",
-                          type="radial"))
-                  ),        
-        secondary_y=False,
-    )
-    
+     
     fig.add_trace(
         go.Scatter(x=df_tot.index, y=df_tot['TSLA'], name="Tesla stock price",
                   marker=dict(
