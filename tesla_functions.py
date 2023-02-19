@@ -215,7 +215,7 @@ def get_yearly_values(df_tot, df_e, df_deposit):
         else:   
             df_yearly['Profit/loss - deposits [%]'][x] = round((end-start-deposits)/start*100,1)
             df_yearly['Profit/loss - deposits [$]'][x] = round(end-start-deposits)
-    df_yearly    
+    df_yearly.index = pd.to_datetime(df_yearly.index, format='%Y')   
     return df_yearly
 
     # In[41]:
