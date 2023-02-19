@@ -354,7 +354,7 @@ def make_portfolio_plot(df_tot, width, height):
 
     fig.add_trace(
         go.Scatter(x=df_tot.index, y=df_tot['Portfolio'], name="Portfolio", marker_color="rgb(255,213,0)",
-                  fill='toself', fillcolor='rgb(255,213,0)',),
+                  fill='tozeroy', fillcolor='rgba(255,213,0,0.2)',),
         secondary_y=False
     )
 
