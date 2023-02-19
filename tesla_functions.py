@@ -310,6 +310,7 @@ def make_total_plot(df_tot, width, height):
         go.Scatter(x=df_tot.index, y=df_tot['TSLA'], name="Tesla stock price",
                   marker=dict(
                       color="rgb(255,0,255)",
+                      size=40,
                       gradient=dict(
                           color="rgba(255,0,255,0.2)",
                           type="radial"))
