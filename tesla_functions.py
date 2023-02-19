@@ -311,7 +311,7 @@ def make_total_plot(df_tot, width, height):
                   marker=dict(
                       color="rgb(255,0,255)",
                       gradient=dict(
-                          color=["rgba(255,0,255,0.2)",
+                          color="rgba(255,0,255,0.2)",
                           type="radial",),         
         secondary_y=False
     )
