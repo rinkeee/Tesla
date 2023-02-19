@@ -1,9 +1,15 @@
 import streamlit as st
 import tesla_functions as tf
 import plotly.graph_objects as go
+from PIL import Image
+
+photo = Image.open('roadster.png')
 
 st.set_page_config(layout='wide')
-st.title('Dashboard Tesla Investment Insights')
+
+a, b = st.columns(2)
+a.title('Dashboard Tesla Investment Insights')
+b.image(photo)
 df = tf.get_stock_data()
 df_e, df_deposit = tf.get_etoro_data(df=df)
 df_tot = tf.combine_etoro_stock_data(df_e=df_e, df=df)
