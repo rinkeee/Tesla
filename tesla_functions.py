@@ -292,7 +292,7 @@ def make_bar_chart2(df_yearly, width, height, name, column, red_green=True, name
         bargroupgap=0.1 # gap between bars of the same location coordinate.
     )
     fig.update_layout(width=width,height=height)
-    fig.update_xaxes(dtick=1)
+    fig.update_xaxes(tickvals=df_yearly.index)
     return fig
 
 def make_total_plot(df_tot, width, height):
