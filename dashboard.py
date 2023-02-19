@@ -2,6 +2,7 @@ import streamlit as st
 import tesla_functions as tf
 import plotly.graph_objects as go
 
+st.set_page_config(layout='wide')
 st.title('Dashboard Tesla Investment Insights')
 df = tf.get_stock_data()
 df_e, df_deposit = tf.get_etoro_data(df=df)
