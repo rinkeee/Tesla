@@ -308,7 +308,7 @@ def make_total_plot(df_tot, width, height):
  
     fig.add_trace(
         go.Scatter(x=df_tot.index, y=df_tot['TSLA'], name="Tesla stock price", marker_color="rgb(255,0,255)",
-                  fill='tonexty', fillcolor='rgba(255,0,255,0.2)'),
+                  fill='toself', fillcolor='rgba(255,0,255,0.2)'),
         secondary_y=False
     )
 
